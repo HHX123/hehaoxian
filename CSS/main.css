@@ -9,7 +9,10 @@ body
     background-color: #F5F5F5;
 }
 
-
+.num
+{
+    display:none;
+}
 .top
 {
     width:100%;
