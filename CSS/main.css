@@ -1,0 +1,479 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #F5F5F5;
+}
+
+
+.top
+{
+    width:100%;
+    height:27px;
+    background-color:#F5F5F5;
+}
+
+.top_content
+{
+    width: 1200px;
+    height: 27px;
+    margin: 0 auto;
+    background-color:gray;
+}
+
+.head
+{
+    font-size: 17px;
+    text-align: center;
+    width: 500px;
+    line-height: 27px;
+}
+
+.top_content li
+{
+    
+    list-style-type:disc ;
+    /*list-style-image: url(E:\web\image\li_bg.gif);*/
+    float: right;
+    width: 66px;   
+    line-height: 27px;/*设置为与盒子的高度相同，文字在垂直方向上居中*/   
+}
+
+.top_content a:link
+{
+    text-decoration: none;
+    color: blue;
+}
+
+.top_content a:visited
+{
+    color: rgb(78, 83, 83);
+}
+.top_content a:hover
+{
+    color:orange;
+}
+
+.top_content a:active
+{
+    color:purple;
+}
+
+.warp
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo
+{
+    height:100px;
+    background-color: white;
+}
+
+.logo_left
+{   
+    margin-left:50px; 
+    margin-top: 10px;
+    height: 80px;
+    border: 3px solid red;
+    border-radius: 200px;
+    width: 80px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.logo_left img{
+    transform: translate(-1px,-9px);
+}
+
+
+.logo_right
+{
+    width: 500px;
+    float: right; 
+    height: 28px;
+    margin-top: 40px;
+}
+
+.logo_right img/*logo_right下img的样式*/
+{
+    vertical-align: middle;/*文字和图片对齐*/
+}
+
+.tel
+{
+    color: blue;
+    font-family: "微软雅黑";
+}
+
+.nav
+{
+    height: 40px;
+    clear: both;
+}
+
+.nav_left
+{
+    height: 40px;
+    width: 10px;
+    background-image: url(../image/nav_left.jpg);
+    background-repeat: no-repeat;
+    /*background-color: blue;*/
+    float: left;
+}
+
+.nav_mid
+{
+    height: 40px;
+    width: 1180px;
+    background-image: url(../image/nav_bg.jpg);
+    background-repeat: repeat-x;
+    /**background-color: red;**/
+    float: left;
+}
+
+.nav_right
+{
+    height: 40px;
+    width: 10px;
+    background-image: url(../image/nav_right.jpg);
+    background-repeat: no-repeat;
+    /*background-color: blue;*/
+    float: left;
+}
+
+.nav_mid_left
+{
+    width: 780px;
+    float: left;
+}
+
+.nav_mid_right
+{
+    width: 400px;
+    float: right;
+}
+
+.nav_mid_left li
+{
+    float: left;
+    list-style-type: none;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+    font-family: "微软雅黑";
+}
+
+.nav_mid_left a:link
+{
+    text-decoration: none;
+    color:white;  
+}
+
+.nav_mid_left a:visited
+{
+    color: rgb(78, 83, 83);
+}
+
+.nav_mid_left a:hover
+{
+    color:blue;
+}
+
+.nav_mid_left a:active
+{
+    color:purple;
+}
+
+.search_text
+{
+    width: 190px;
+    height: 25px;
+    margin-top: 5px;
+    background: url(../image/search.jpg) no-repeat right center;
+    /*background-image: url(../image/search.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;*/
+    background-color:white;
+    padding-right:25px; 
+    border: 1px solid;
+}
+
+.ad
+{
+    width: 1000px;
+    height: 310px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ad ul
+{
+    text-align: center;/*依然没有居中*/
+    list-style-type: none;
+    display: inline;/*为什么添加了这句图片实现了水平居中？*/
+}
+
+.main
+{
+    display: flex;
+    height: 280px;
+    background-color:white;
+    margin-top: 5px;
+}
+
+.video
+{
+    width:33%;
+    border: 1px solid #E8E8E8;
+}
+
+.music
+{
+    width: 390px;
+    border: 1px solid #E8E8E8;
+    margin: 0 12px;
+}
+
+.news
+{
+    width: 390px;
+    border: 1px solid #E8E8E8;
+}
+
+.video,.music,.news
+{
+    float: left;
+    height:278px;/*278px???*/
+}
+
+.title
+{
+    width: 100%;
+    height: 35px;
+    border-bottom: 2px solid #E8E8E8;
+    font-size: 20px;
+}
+
+.title_left
+{
+    width: 70%;
+    font-family: "微软雅黑";
+    font-weight: bold;/*字体加粗*/
+    color: #786f66;
+    float: left;
+    line-height: 35px;
+    padding-left: 20px;
+
+}
+
+.title_right
+{
+    width: 30%;
+    line-height: 35px;
+    color: #786f66;
+}
+
+.title_right a:link
+{
+    text-decoration: none;
+    color: #786f66;
+}
+
+.title_right a:visited
+{
+    color: purple;
+}
+
+.title_right a:hover
+{
+    background-color: red;
+    color: white;
+}
+
+.title_right a:active
+{
+    color: purple;
+}
+
+.video_pic
+{
+    height: 80px;
+    line-height: 32px;
+    margin-top: 10px;
+}
+
+.video_pic img
+{
+    float: left;
+    margin: 0 15px;/*为什么不是用padding*/
+}
+
+.video_pic a:link,.news_pic a:link
+{
+    text-decoration: none;
+    color: black;
+}
+
+.video_pic a:visited,.news_pic a:visited
+{
+    color: purple;
+}
+
+.video_pic a:hover,.video_pic a:active,.news_pic a:hover,.news_pic a:active
+{
+    color: red;
+}
+
+.video_list
+{
+    margin-top: 20px;
+}
+
+.video_list li
+{
+    list-style-type: none;
+    margin: 10px ;
+    padding-left:15px; 
+    background-image: url(../image/list.jpg);/*no-repeat写在这里为什么不行？*/
+    background-repeat: no-repeat;
+    border-bottom: 1px dotted #CCC;
+}
+
+.video_list li a:link
+{
+    text-decoration: none;
+}
+
+.video_list li a:visited
+{
+    color: purple;
+}
+
+.video_list li a:hover,.video_list li a:active
+{
+    color: red;
+}
+
+.video_list span,.news_list span
+{
+    color: gray;
+    float: right;
+}
+
+.music_pic,.news_pic
+{
+    height: 80px;
+    line-height: 32px;
+    margin-top: 10px;
+}
+
+.music_pic img,.news_pic img
+{
+    float: left;
+    margin: 0 15px;/*为什么不是用padding*/
+}
+
+.music_pic a:link
+{
+    text-decoration: none;
+    color: black;
+}
+
+.music_pic a:visited
+{
+    color: purple;
+}
+
+.music_pic a:hover,.music_pic a:active
+{
+    color: red;
+}
+
+.music_list,.news_list
+{
+    margin-top: 20px;
+}
+
+.music_list li,.news_list li
+{
+    list-style-type: none;
+    margin: 10px ;
+    padding-left:15px; 
+    background-image: url(../image/list.jpg);/*no-repeat写在这里为什么不行？*/
+    background-repeat: no-repeat;
+    border-bottom: 1px dotted #CCC;
+}
+
+.music_list li a:link,.news_list li a:link
+{
+    text-decoration: none;
+}
+
+.music_list li a:visited,.news_list li a:visited
+{
+    color: purple;
+}
+
+.music_list li a:hover,.music_list li a:active,.news_list li a:hover,.news_list li a:active
+{
+    color: red;
+}
+
+.music_list span
+{
+    color: gray;
+    float: right;
+}
+
+.add
+{
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+    margin:5px auto;
+}
+
+.add_title
+{
+    height: 35px;
+    border-bottom: 2px solid #E8E8E8;
+    font-size: 15px;
+    font-family: "微软雅黑";
+    line-height: 35px;
+    text-align: center;
+}
+
+.copyright
+{
+    width: 100%;
+    height: 60px;
+    background-color: #E8E8E8;
+    margin-top: 10px;
+}
+
+.copyright_content
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.ul_1 li
+{
+   list-style-type: none;
+   text-align: center;
+   line-height: 30px;
+}
+
+.ul_2 li
+{
+    list-style-type: none;
+    float: right;
+    margin: 0 10px;
+    margin-top: 15px;
+}
